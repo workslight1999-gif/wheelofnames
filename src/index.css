@@ -19,10 +19,11 @@
 }
 
 * { box-sizing: border-box; }
-body { min-width: 320px; min-height: 100vh; margin: 0; }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: #f4f1e8; }
 button, input { font: inherit; }
 button { color: inherit; }
 button:focus-visible, input:focus-visible { outline: 3px solid #3a6ea5; outline-offset: 3px; }
 ::selection { color: var(--ink); background: #ead699; }
 
-#root { min-height: 100vh; }
+#root { min-height: 100vh; background: #f4f1e8; }
+#root:has(.app-shell[data-theme='night']) { background: #202a25; }
